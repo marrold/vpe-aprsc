@@ -1,0 +1,12 @@
+version: "3.2"
+
+
+services:
+
+  aprsc:
+    image: aprsc
+    container_name: aprsc
+    restart: unless-stopped
+    network_mode: "host"
+    volumes:
+      - ./aprsc.conf:/opt/aprsc/etc/aprsc.conf
